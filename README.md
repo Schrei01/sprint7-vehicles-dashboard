@@ -4,9 +4,9 @@ Proyecto de análisis exploratorio básico y aplicación web de **Streamlit** co
 
 ## Aplicación desplegada en Render
 
-**URL pública:** PENDIENTE_DE_COMPLETAR_DESPUÉS_DEL_DESPLIEGUE
+**URL pública:** https://sprint7-vehicles-dashboard.onrender.com
 
-> Reemplazar el texto anterior con la URL real `https://nombre-del-servicio.onrender.com` antes de entregar el proyecto.
+> Aplicación alojada en Render con despliegue automático desde la rama `main`.
 
 ## Funcionalidades
 
