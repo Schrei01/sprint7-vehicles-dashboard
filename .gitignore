@@ -1,0 +1,19 @@
+# Python y entornos virtuales
+.venv/
+venv/
+vehicles_env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE y sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# vehicles_us.csv es obligatorio y debe subirse al repositorio.
