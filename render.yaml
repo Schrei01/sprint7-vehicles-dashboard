@@ -1,9 +1,9 @@
-# Despliegue como Blueprint de Render
+# Deploy Streamlit on Render, reconstructing the complete CSV during build.
 services:
   - type: web
     name: sprint7-vehicles-dashboard
     runtime: python
     plan: free
-    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    buildCommand: python assemble_dataset.py && pip install --upgrade pip && pip install -r requirements.txt
     startCommand: streamlit run app.py --server.address 0.0.0.0 --server.port $PORT
     autoDeployTrigger: commit
