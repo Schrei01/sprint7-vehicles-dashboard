@@ -70,13 +70,24 @@ También se incluye un `render.yaml` para crear el servicio como Blueprint desde
    ```
 
 6. Desplegar y verificar que la URL pública abre el dashboard.
-7. Reemplazar `PENDIENTE_DE_COMPLETAR_DESPUÉS_DEL_DESPLIEGUE` con la URL real y hacer commit.
+7. Comprobar que el enlace público declarado al inicio de este README abre correctamente la aplicación.
 
 **Nota:** el comando de inicio explícito utiliza el host y puerto que Render necesita para ofrecer el servicio web públicamente.
 
 ## Análisis exploratorio
 
 `notebooks/EDA.ipynb` incluye las comprobaciones de calidad y visualizaciones iniciales. Se evita imputar valores ausentes sin evidencia y los valores extremos se mantienen en los datos originales.
+
+## Hallazgos principales
+
+A partir de los **51.525 anuncios** del conjunto de datos:
+
+- El **precio mediano anunciado** es de **9.000 USD**.
+- El **kilometraje mediano registrado** es de **113.000 millas**.
+- Los tipos más frecuentes son **SUV (12.405 anuncios)**, **truck (12.353)** y **sedan (12.154)**.
+- Existen **7.892 anuncios sin kilometraje** y **3.619 sin año del modelo**; por eso las visualizaciones evitan imputaciones arbitrarias.
+
+Estos valores son descriptivos: representan anuncios, no precios efectivos de compraventa, y no demuestran relaciones causales.
 
 ## Alcance
 
